@@ -1,0 +1,119 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background: linear-gradient(to right bottom, #5769cf, #5957cf, #7557cf, #aa54c7, #be5fde, #bf73d9)
+}
+
+.btn {
+  background: linear-gradient(
+    to left bottom,
+    #5083f2,
+    #6373e0,
+    #6395e0,
+    #63c1e0
+  );
+}
+
+.btn:hover {
+  background: linear-gradient(
+    to right bottom,
+    #63c1e0 20%,
+    #6395e0 50%,
+    #6373e0 100%,
+    #7e63e0 200%
+  );
+  filter: drop-shadow(0 2px 2px);
+  transition: .5s;
+}
+
+.gradient,
+.活躍 {
+  background: linear-gradient(
+    to right bottom,
+    #63c1e0 20%,
+    #6395e0 50%,
+    #6373e0 100%,
+    #7e63e0 200%
+  );
+  color: #fff;
+  padding: 1rem;
+  border-radius: 20%;
+  filter: drop-shadow(0 1px 10px);
+  transition: .8s 
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+}
+
+.ANIMATION {
+  animation-name: 上下;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease;
+  transition: .3s
+}
+
+@keyframes 上下 {
+  0% {
+    transform: translateY(0px)
+  }
+  50% {
+    transform: translateY(-40px)
+  }
+  100% {
+    transform: translateY(0px)
+  }
+}
+
+.ANIMATION_1 {
+  animation-name: 下上;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease;
+  transition: .3s;
+}
+
+@keyframes 下上 {
+  0% {
+    transform: translateY(40px)
+  }
+  50% {
+    transform: translateY(0px)
+  }
+  100% {
+    transform: translateY(40px)
+  }
+}
+
+@layer base {
+  body {
+    @apply font-secondary text-lg leading-8 text-white;
+  }
+  .h2 {
+    @apply font-primary text-[32px] mb-6 tracking-[10%] uppercase;
+  }
+  .h3 {
+    @apply font-primary font-semibold text-[26px] mb-6 leading-[46px];
+  }
+  .btn {
+    @apply font-primary text-white font-medium rounded-full;
+  }
+  .btn-sm {
+    @apply h-[48px] px-9 text-sm;
+  }
+  .btn-lg {
+    @apply h-[56px] px-10 text-base;
+  }
+  .btn-link {
+    @apply text-base;
+  }
+  .text-gradient {
+    @apply bg-gradient-to-r text-transparent bg-clip-text from-[#42A6E3] to-[#FF56F6] font-bold font-primary hover:from-[#FF56F6] hover:to-[#42A6E3];
+  }
+  .section {
+    @apply py-8 lg:py-24 lg:h-screen flex items-center;
+  }
+}
