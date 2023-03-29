@@ -8,10 +8,10 @@ import {FaFacebook, FaInstagram, FaGithub} from 'react-icons/fa'
 const About = () => {
   return <div id='about' className=''>
     <div className='container mx-auto'>
-      <div className='relative h-56 w-56 '>
+      <div className='relative h-56 w-56'>
         <div className='lg:flex hidden'>
           { /*image-1*/ }
-          <img className='absolute left-0 top-[20px] rounded-[35px] shadow-lg shadow-cyan-400/100 ANIMATION_1' src={about_2} alt=''/>
+          <img className='absolute  left-0 top-[20px] rounded-[35px] shadow-lg shadow-cyan-400/100 ANIMATION_1' src={about_2} alt=''/>
         </div>
       </div>
       <div className='flex justify-center'>
