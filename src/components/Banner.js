@@ -13,9 +13,9 @@ const Banner = () => {
   function play() {
     new Audio(audio).play()
   }
-  return <section id='home' className='flex  min-h-[85vh]'>
+  return <section id='home' className='flex min-h-[85vh]'>
     <div className='container mx-auto pb-16'>
-      <div className='flex flex-col lg:flex-row lg:justify-between lg:items-center'>
+      <div className='flex flex-col lg:flex-row lg:justify-between items-center'>
         { /*text*/ }
         <div className='p-[20px] text-center lg:text-left '>
           <u><span className='mb-6 text-[65px] font-semibold leading-[3] text-center lg:text-left'>我是kirano</span></u>
