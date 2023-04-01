@@ -4,6 +4,10 @@ import about_2 from '../assets/about_2.png'
 import about_1 from '../assets/about_1.png'
 //icon
 import {FaFacebook, FaInstagram, FaGithub} from 'react-icons/fa'
+//motion
+import { motion } from 'framer-motion';
+//fade in
+import { fadeIn } from '../variants'
 
 const About = () => {
   return <div id='about' className=''>
@@ -16,10 +20,10 @@ const About = () => {
       </div>
       <div className='flex justify-center'>
         { /*title*/ }
-        <span className='relative font-semibold text-[48px] bottom-[80px] '>關於我:</span>
+        <motion.span variants={fadeIn('bottom', 0.2)} initial='hidden' whileInView={'show'} viewport={{once: false, amount: 0.7}} className='relative font-semibold text-[48px] bottom-[80px] '>關於我:</motion.span>
       </div>
       { /*details*/ }
-      <div className='text-center text-[23px] font-medium relative bottom-[58px]'>
+      <motion.div variants={fadeIn('bottom', 0.2)} initial='hidden' whileInView={'show'} viewport={{once: false, amount: 0.7}} className='text-center text-[23px] font-medium relative bottom-[58px]'>
         <span>嗨嗨我出生在馬來西亞~</span>
         <br/>
         <span className='bg-white rounded-md font-semibold hover:bg-gray-300 hover:text-gray-700 transition delay-75 '>我的年齡無可奉告哦欸嘿</span>
@@ -39,8 +43,8 @@ const About = () => {
         <span>目前正在學習blender和攝影</span>
         <br/>
         <span>還有網站設計</span>
-      </div>
-      <div className='relative flex justify-center bottom-10 text-[35px] space-x-4'>
+      </motion.div>
+      <motion.div variants={fadeIn('bottom', 0.2)} initial='hidden' whileInView={'show'} viewport={{once: false, amount: 0.7}} className='relative flex justify-center bottom-10 text-[35px] space-x-4'>
         { /*fb icon*/ }
         <a className='cursor-pointer w-[35px] h-[35px] rounded-full text-gray-300 hover:bg-white hover:text-blue-400 transition delay-75' href='https://www.facebook.com/kirano.awe'>
           <div className='relative before:text-[20px] before:z-10 before:absolute before:left-1/2 before:-top-3 before:w-max before:max-w-xs before:-translate-x-1/2 before:-translate-y-full before:rounded-lg before:bg-gray-700 before:px-2 before:py-1.5 before:text-white before:invisible before:content-[attr(data-tip)] after:z-10 after:absolute after:left-1/2 after:-top-3 after:h-0 after:w-0 after:-translate-x-1/2 after:border-8 after:border-t-gray-700 after:border-l-transparent after:border-b-transparent after:border-r-transparent after:invisible hover:before:visible hover:after:visible' data-tip="點進來看看 ヾ(•ω•`)o">
@@ -59,7 +63,7 @@ const About = () => {
             <FaGithub/>
           </div>
         </a>
-      </div>
+      </motion.div>
       <div className='relative lg:w-56 lg:h-56'>
         { /*image-2*/ }
         <img className='absolute ml-[1000px] bottom-[200px] rounded-[35px] shadow-lg shadow-pink-700/100 ANIMATION' src={about_1} alt=''/>
