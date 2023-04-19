@@ -7,6 +7,10 @@ import { FaGithub, FaFacebook, FaInstagram } from 'react-icons/fa';
 import {TypeAnimation} from 'react-type-animation'
 //audio
 import audio from '../assets/gura-a.mp3'
+//motion
+import { motion } from 'framer-motion';
+//fade in
+import { fadeIn } from '../variants'
 
 const Banner = () => {
    /*audio*/ 
@@ -18,7 +22,7 @@ const Banner = () => {
       <div className='flex flex-col lg:flex-row lg:justify-between items-center'>
         { /*text*/ }
         <div className='p-[20px] text-center lg:text-left '>
-          <u><span className='mb-6 text-[65px] font-semibold leading-[3] text-center lg:text-left'>我是kirano</span></u>
+          <motion.span variants={fadeIn('up', 0.1)} initial='hidden' whileInView={'show'} viewport={{once: false, amount: 1.0}} className='mb-6 text-[65px] font-semibold leading-[3] text-center lg:text-left'>我是kirano</motion.span>
           <TypeAnimation className='text-[44px] font-medium leading-[1] ' sequence={['你們好！', 2000, 'Apa khabar!', 2000, 'hello!', 2000, '你们好呀!', 2000, 'こんにちは!', 2000, '안녕하세요!', 2000, 'Saluton!', 2000, 'Ciao!', 2000, 'Hola!', 2000]} speed={50} repeat={Infinity}/>
           <div className='text-[25px] text-gray-300 text-center lg:text-left'>
             <span>一位默默無聞的網站設計師在此:)</span>
