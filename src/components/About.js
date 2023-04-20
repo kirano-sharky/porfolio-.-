@@ -64,7 +64,7 @@ const About = () => {
           </div>
         </a>
       </motion.div>
-      <div className='relative lg:w-56 lg:h-56'>
+      <div className='relative lg:w-56 lg:h-56 right-5'>
         { /*image-2*/ }
         <img className='absolute ml-[1000px] bottom-[200px] rounded-[35px] shadow-lg shadow-pink-700/100 ANIMATION' src={about_1} alt=''/>
       </div>

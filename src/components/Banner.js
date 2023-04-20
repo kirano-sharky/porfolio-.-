@@ -44,7 +44,7 @@ const Banner = () => {
           </div>
         </div>
         { /*avatar*/ }
-        <div className='p-4 lg:w-1/2 hidden lg:flex'>
+        <div className='relative right-[30px] lg:w-[500px] hidden lg:flex'>
           <div className='relative before:z-10 before:absolute before:left-1/2 before:font-bold before:text-white before:border-2 before:border-blue-300 before:-bottom-5 before:w-max before:max-w-xs before:-translate-x-1/2 before:translate-y-full before:rounded-2xl before:bg-blue-500 before:px-5 before:py-1.5 before:invisible before:content-[attr(data-tip)] after:z-10 after:absolute after:left-1/2 after:-bottom-5 after:h-0 after:w-0 after:-translate-x-1/2 after:border-8 after:border-b-blue-300 after:border-l-transparent after:border-t-transparent after:border-r-transparent after:invisible active:before:visible active:after:visible' data-tip='A ❗'>
             <img onClick={play} alt='' className='rounded-full cursor-pointer shadow-lg shadow-pink-300/50' src={avatar}/>
           </div>
