@@ -15,7 +15,7 @@ const Work = () => {
     <div className='mx-auto container relative top-[300px] '>
       { /*index_1*/ }
       <div className='relative bottom-[80px] lg:left-11 flex justify-center'>
-        <h1 className='font-bold text-[40px]'>曾經在無聊的時候做過: </h1>
+        <h1 className='font-bold lg:text-[40px] text-[30px]'>曾經在無聊的時候做過: </h1>
       </div>
       { /*project_1*/ }
       <div className='lg:justify-between lg:flex col relative top-2'>
@@ -37,35 +37,41 @@ const Work = () => {
         </div>
       </div>
       { /*project_2*/ }
-      <div className='lg:justify-between lg:flex col'>
-        <div className='relative lg:top-[200px] lg:left-[50px] top-[400px] text-[20px] text-gray-200 text-center'>
+      <div className='lg:justify-between lg:flex col relative lg:top-2 top-11'>
+        <div className='relative lg:top-[60px] top-[100px] lg:left-[300px] '>
+          <motion.img variants={fadeIn('right', 0.1)} initial='hidden' whileInView={'show'} viewport={{once: false, amount: 0.7}} className='w-[900px] rounded-2xl shadow-lg shadow-pink-500' src={project_2} alt=''/>
+        </div>  
+        <div className='relative top-[120px] lg:right-[1000px] lg:top-[180px] text-[20px] font-semibold text-gray-200 leading-10 text-center'>
           <span><b>A</b>的音訊</span>
           <br/>
-          <div className='flex justify-center'>
-            <a href='https://github.com/meA-sonWat/A-webpage-vision'>
-              <button className='bg-gray-100 text-black hover:bg-gray-300 hover:text-gray-700 transition font-primary text-[20px] btn-sm border-none rounded-lg drop-shadow-xl flex items-center leading-[4] h-[55px] font-semibold'>
-                此檔案在這 <a className='p-2'><FaGithub/></a>
+          <div className='flex justify-center '>  
+            <button disabled className='shadow-lg shadow-cyan-400 bg-blue-300 text-black transition duration-100 active:bg-blue-200 cursor-pointer font-primary text-[20px] btn-sm border-none rounded-full drop-shadow-xl flex items-center leading-[4] h-[55px] w-[150px] font-semibold'>
+                <span className='p-2'>A! 🦈</span> 
+            </button>
+          </div>
+          <br/>
+          <div className='relative bottom-4 flex justify-center'>
+            <a href='https://github.com/meA-sonWat/HOLOLIVE-PAGE'>
+              <button className='bg-gray-100 text-black hover:bg-gray-300 hover:text-gray-700 transition font-primary text-[20px] btn-sm border-none rounded-lg drop-shadow-xl flex items-center leading-[4] h-[55px]'>
+                 此檔案在這 <a className='p-2'><FaGithub/></a>
               </button>
             </a>
           </div>
         </div>
-        <div className='relative top-[30px] lg:left-5'>
-          <motion.img variants={fadeIn('right', 0.1)} initial='hidden' whileInView={'show'} viewport={{once: false, amount: 0.7}} className='w-[900px] rounded-2xl shadow-lg shadow-blue-300 ' src={project_2}/>
-        </div>
       </div>
       { /*index_2*/ }
-      <div className='relative top-[350px] text-center'>
+      <div className='relative lg:top-[400px] top-[500px] text-center'>
         <h1 className='font-bold text-[40px]'>我的第一份react project</h1>
         <br/>
       </div>
-      <div className='relative top-[320px] text-center'>
+      <div className='relative lg:top-[380px] top-[480px] text-center'>
         <span className='text-gray-300'>learned from ZAINKEEPSCODE</span>
       </div>
       { /*project_3*/ }
-      <div className='relative top-[330px] lg:flex justify-center'>
+      <div className='relative lg:top-[400px] top-[500px] lg:flex justify-center'>
         <motion.img variants={fadeIn('', 0.1)} initial='hidden' whileInView={'show'} viewport={{once: false, amount: 0.7}} className='rounded-2xl lg:w-[859px] lg:h-[400px] shadow-lg shadow-[#fa9f02]' src={project_3}/>
       </div>
-      <div className='relative top-[360px] flex justify-center'>
+      <div className='relative lg:top-[440px] top-[540px] flex justify-center'>
         <a href='https://github.com/meA-sonWat/learning-react'>
           <button className='bg-gray-100 text-black hover:bg-gray-300 hover:text-gray-700 transition font-primary text-[20px] btn-sm border-none rounded-lg drop-shadow-xl flex items-center leading-[4] h-[55px] font-semibold'>
             此檔案在這 <a className='p-2'><FaGithub/></a>
@@ -73,7 +79,7 @@ const Work = () => {
         </a>
       </div>
       { /*learn more*/ }
-      <div className='relative text-center top-[550px] leading-[50px]'>
+      <div className='relative text-center top-[700px] lg:top-[550px] leading-[50px]'>
         <span className='text-[40px] font-bold'>更多檔案在這裏!</span>
         <br/>
         <div className='flex justify-center'>
