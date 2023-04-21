@@ -11,25 +11,25 @@ import { motion } from 'framer-motion';
 import { fadeIn } from '../variants'
 
 const Work = () => {
-  return <div id='work' className='h-[2300px]'>
-    <div className='mx-auto container relative top-[90px] '>
+  return <div id='work' className='h-[3000px]'>
+    <div className='mx-auto container relative top-[300px] '>
       { /*index_1*/ }
-      <div className='relative bottom-[30px] left-11 '>
+      <div className='relative bottom-[80px] lg:left-11 flex justify-center'>
         <h1 className='font-bold text-[40px]'>曾經在無聊的時候做過: </h1>
       </div>
       { /*project_1*/ }
-      <div className='justify-between lg:flex col relative top-4'>
-        <div className='relative bottom-[30px] left-11 '>
-          <motion.img variants={fadeIn('up', 0.1)} initial='hidden' whileInView={'show'} viewport={{once: false, amount: 0.7}} className='w-[900px] rounded-2xl shadow-lg shadow-pink-500' src={project_1} alt=''/>
+      <div className='lg:justify-between lg:flex col relative top-2'>
+        <div className='relative bottom-[30px] lg:left-11 '>
+          <motion.img variants={fadeIn('left', 0.1)} initial='hidden' whileInView={'show'} viewport={{once: false, amount: 0.7}} className='w-[900px] rounded-2xl shadow-lg shadow-pink-500' src={project_1} alt=''/>
         </div>  
-        <div className='relative left-[30px] top-[120px] text-[20px] font-semibold text-gray-200 leading-10'>
+        <div className='relative lg:left-[30px] lg:top-[120px] text-[20px] font-semibold text-gray-200 leading-10 text-center'>
           <span>hololive的個人界面</span>
           <br/>
           <span>點擊按鈕即可看見各yt頻道</span>
           <br/>
-          <div className='flex'>
+          <div className='flex justify-center'>
             <a href='https://github.com/meA-sonWat/HOLOLIVE-PAGE'>
-              <button className='bg-gray-100 text-black hover:bg-gray-300 hover:text-gray-700 transition font-primary text-[20px] btn-sm border-none rounded-lg drop-shadow-xl flex items-center leading-[4] h-[55px] '>
+              <button className='bg-gray-100 text-black hover:bg-gray-300 hover:text-gray-700 transition font-primary text-[20px] btn-sm border-none rounded-lg drop-shadow-xl flex items-center leading-[4] h-[55px]'>
                  此檔案在這 <a className='p-2'><FaGithub/></a>
               </button>
             </a>
@@ -37,11 +37,11 @@ const Work = () => {
         </div>
       </div>
       { /*project_2*/ }
-      <div className='justify-between lg:flex col'>
-        <div className='relative top-[200px] left-[50px] text-[20px] text-gray-200'>
+      <div className='lg:justify-between lg:flex col'>
+        <div className='relative lg:top-[200px] lg:left-[50px] top-[400px] text-[20px] text-gray-200 text-center'>
           <span><b>A</b>的音訊</span>
           <br/>
-          <div className='flex'>
+          <div className='flex justify-center'>
             <a href='https://github.com/meA-sonWat/A-webpage-vision'>
               <button className='bg-gray-100 text-black hover:bg-gray-300 hover:text-gray-700 transition font-primary text-[20px] btn-sm border-none rounded-lg drop-shadow-xl flex items-center leading-[4] h-[55px] font-semibold'>
                 此檔案在這 <a className='p-2'><FaGithub/></a>
@@ -49,8 +49,8 @@ const Work = () => {
             </a>
           </div>
         </div>
-        <div className='relative top-[30px] left-5'>
-          <motion.img variants={fadeIn('up', 0.1)} initial='hidden' whileInView={'show'} viewport={{once: false, amount: 0.7}} className='w-[900px] rounded-2xl shadow-lg shadow-blue-300' src={project_2}/>
+        <div className='relative top-[30px] lg:left-5'>
+          <motion.img variants={fadeIn('right', 0.1)} initial='hidden' whileInView={'show'} viewport={{once: false, amount: 0.7}} className='w-[900px] rounded-2xl shadow-lg shadow-blue-300 ' src={project_2}/>
         </div>
       </div>
       { /*index_2*/ }

@@ -10,9 +10,9 @@ import { motion } from 'framer-motion';
 import { fadeIn } from '../variants'
 
 const About = () => {
-  return <div id='about' className=''>
-    <div className='container mx-auto'>
-      <div className='relative h-56 w-56'>
+  return <div id='about' className='h-[900px]'>
+    <div className='container mx-auto '>
+      <div className='relative h-56 w-56 '>
         <div className='lg:flex hidden'>
           { /*image-1*/ }
           <img className='absolute  left-0 top-[20px] rounded-[35px] shadow-lg shadow-cyan-400/100 ANIMATION_1' src={about_2} alt=''/>
@@ -20,10 +20,10 @@ const About = () => {
       </div>
       <div className='flex justify-center'>
         { /*title*/ }
-        <motion.span variants={fadeIn('bottom', 0.2)} initial='hidden' whileInView={'show'} viewport={{once: false, amount: 0.7}} className='relative font-semibold text-[48px] bottom-[80px] '>關於我:</motion.span>
+        <motion.span variants={fadeIn('', 0.2)} initial='hidden' whileInView={'show'} viewport={{once: false, amount: 0.7}} className='relative font-semibold text-[48px] bottom-[80px] '>關於我:</motion.span>
       </div>
       { /*details*/ }
-      <motion.div variants={fadeIn('bottom', 0.2)} initial='hidden' whileInView={'show'} viewport={{once: false, amount: 0.7}} className='text-center text-[23px] font-medium relative bottom-[58px]'>
+      <motion.div variants={fadeIn('', 0.2)} initial='hidden' whileInView={'show'} viewport={{once: false, amount: 0.7}} className='text-center text-[23px] font-medium relative bottom-[58px]'>
         <span>嗨嗨我出生在馬來西亞~</span>
         <br/>
         <span className='bg-white rounded-md font-semibold hover:bg-gray-300 hover:text-gray-700 transition delay-75 '>我的年齡無可奉告哦欸嘿</span>
