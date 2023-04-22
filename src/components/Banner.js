@@ -32,7 +32,7 @@ const Banner = () => {
             <div className='p-1 flex lg:mx-0 mx-auto items-center mb-12 max-w-max '>
               { /*social media*/ }
               <a href='https://github.com/meA-sonWat'>
-                <button className='btn btn-sm border-none rounded-lg shadow-lg shadow-cyan-500/50 flex items-center leading-[4] text-[18px] h-[55px]'>
+                <button className='btn btn-sm border-none rounded-lg shadow-lg shadow-cyan-500/50 flex items-center text-[18px] h-[55px]'>
                   GitHub <a className='p-2'><FaGithub/></a>
                 </button>
               </a>

@@ -37,7 +37,7 @@ const Services = () => {
           <span className='relative left-4 text-[20px]'>🦈-可以分享自己的成果~</span>
           <div className='flex justify-center'>
             <a href='https://discord.gg/myit'>
-              <button className='relative top-2 btn btn-sm border-none rounded-lg shadow-lg shadow-cyan-500/50 flex items-center leading-[4] text-[18px] h-[55px] hover:shadow-md hover:shadow-[#474749] hover:text-[#474749]'>
+              <button className='relative top-2 btn btn-sm border-none rounded-lg shadow-lg shadow-cyan-500/50 flex items-center text-[18px] h-[55px] hover:shadow-md hover:shadow-[#474749] hover:text-[#474749]'>
                 Join us! <a className='p-1'><FaDiscord/></a>
               </button>
             </a>
@@ -64,7 +64,7 @@ const Services = () => {
           <span className='relative left-4 text-[20px]'>🦈-戰 艦 收 藏</span>
           <div className='flex justify-center'>
             <a href='https://discord.gg/zeitfrei'>
-              <button className='relative top-2 btn btn-sm border-none rounded-lg shadow-lg shadow-cyan-500/50 flex items-center leading-[4] text-[18px] h-[55px] hover:shadow-md hover:shadow-[#474749] hover:text-[#474749]'>
+              <button className='relative top-2 btn btn-sm border-none rounded-lg shadow-lg shadow-cyan-500/50 flex items-center text-[18px] h-[55px] hover:shadow-md hover:shadow-[#474749] hover:text-[#474749]'>
                 Join us! <a className='p-1 '><FaDiscord/></a>
               </button>
             </a>

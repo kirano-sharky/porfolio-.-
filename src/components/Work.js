@@ -29,7 +29,7 @@ const Work = () => {
           <br/>
           <div className='flex justify-center'>
             <a href='https://github.com/meA-sonWat/HOLOLIVE-PAGE'>
-              <button className='bg-gray-100 text-black hover:bg-gray-300 hover:text-gray-700 transition font-primary text-[20px] btn-sm border-none rounded-lg drop-shadow-xl flex items-center leading-[4] h-[55px]'>
+              <button className='bg-gray-100 text-black hover:bg-gray-300 hover:text-gray-700 transition font-primary text-[20px] btn-sm border-none rounded-lg drop-shadow-xl flex items-center h-[55px]'>
                  此檔案在這 <a className='p-2'><FaGithub/></a>
               </button>
             </a>
@@ -41,18 +41,21 @@ const Work = () => {
         <div className='relative lg:top-[60px] top-[100px] lg:left-[300px] '>
           <motion.img variants={fadeIn('right', 0.1)} initial='hidden' whileInView={'show'} viewport={{once: false, amount: 0.7}} className='w-[900px] rounded-2xl shadow-lg shadow-pink-500' src={project_2} alt=''/>
         </div>  
-        <div className='relative top-[120px] lg:right-[1000px] lg:top-[180px] text-[20px] font-semibold text-gray-200 leading-10 text-center'>
-          <span><b>A</b>的音訊</span>
+        <div className='relative top-[150px] lg:right-[1000px] lg:top-[180px] text-[20px] font-semibold text-gray-200 leading-10 text-center'>
+          <button className='relative bottom-5 border-2 cursor-wait border-white py-2.5 px-5 font-bold uppercase text-white transition-colors before:absolute before:left-0 before:top-0 before:-z-10 before:h-full before:w-full before:origin-top-left before:scale-x-0 before:bg-cyan-200 before:transition-transform before:duration-300 hover:text-black hover:border-black before:hover:scale-x-100'>
+            pizzzzzzza <span className='animate-ping'>🍕</span>
+          </button>
           <br/>
           <div className='flex justify-center '>  
-            <button disabled className='shadow-lg shadow-cyan-400 bg-blue-300 text-black transition duration-100 active:bg-blue-200 cursor-pointer font-primary text-[20px] btn-sm border-none rounded-full drop-shadow-xl flex items-center leading-[4] h-[55px] w-[150px] font-semibold'>
-                <span className='p-2'>A! 🦈</span> 
+          { /*shaaaaark*/ }
+            <button className='shadow-lg shadow-blue-300 bg-blue-300 text-black transition duration-200 hover:bg-blue-200 cursor-not-allowed font-primary text-[20px] btn-sm border-2 rounded-none drop-shadow-xl flex items-center h-[55px] font-semibold'>
+                <span className='p-2'>shaaaaark!</span> 
             </button>
           </div>
           <br/>
           <div className='relative bottom-4 flex justify-center'>
             <a href='https://github.com/meA-sonWat/HOLOLIVE-PAGE'>
-              <button className='bg-gray-100 text-black hover:bg-gray-300 hover:text-gray-700 transition font-primary text-[20px] btn-sm border-none rounded-lg drop-shadow-xl flex items-center leading-[4] h-[55px]'>
+              <button className='bg-gray-100 text-black hover:bg-gray-300 hover:text-gray-700 transition font-primary text-[20px] btn-sm border-none rounded-lg drop-shadow-xl flex items-center h-[55px]'>
                  此檔案在這 <a className='p-2'><FaGithub/></a>
               </button>
             </a>
@@ -73,7 +76,7 @@ const Work = () => {
       </div>
       <div className='relative lg:top-[440px] top-[540px] flex justify-center'>
         <a href='https://github.com/meA-sonWat/learning-react'>
-          <button className='bg-gray-100 text-black hover:bg-gray-300 hover:text-gray-700 transition font-primary text-[20px] btn-sm border-none rounded-lg drop-shadow-xl flex items-center leading-[4] h-[55px] font-semibold'>
+          <button className='bg-gray-100 text-black hover:bg-gray-300 hover:text-gray-700 transition font-primary text-[20px] btn-sm border-none rounded-lg drop-shadow-xl flex items-center h-[55px] font-semibold'>
             此檔案在這 <a className='p-2'><FaGithub/></a>
           </button>
         </a>
@@ -85,7 +88,7 @@ const Work = () => {
         <div className='flex justify-center'>
           <div className='relative before:text-[20px] before:z-10 before:absolute before:left-1/2 before:-bottom-3 before:w-max before:max-w-xs before:-translate-x-1/2 before:translate-y-full before:rounded-lg before:bg-gray-700 before:px-2 before:py-1.5 before:text-white before:invisible before:content-[attr(data-tip)] after:z-10 after:absolute after:left-1/2 after:-bottom-3 after:h-0 after:w-0 after:-translate-x-1/2 after:border-8 after:border-b-gray-700 after:border-l-transparent after:border-t-transparent after:border-r-transparent after:invisible hover:before:visible hover:after:visible' data-tip="網站代碼的秘密~">
             <a href='https://github.com/meA-sonWat/'>
-              <motion.button variants={fadeIn('', 0.1)} initial='hidden' whileInView={'show'} viewport={{once: false, amount: 0.7}} className='bg-gray-100 text-black hover:bg-gray-300 hover:text-gray-700 transition font-primary text-[20px] btn-sm border-none rounded-tl-lg rounded-br-lg shadow-lg shadow-accent flex items-center leading-[4] h-[55px] font-semibold'>
+              <motion.button variants={fadeIn('', 0.1)} initial='hidden' whileInView={'show'} viewport={{once: false, amount: 0.7}} className='bg-gray-100 text-black hover:bg-gray-300 hover:text-gray-700 transition font-primary text-[20px] btn-sm border-none rounded-tl-lg rounded-br-lg shadow-lg shadow-accent flex items-center h-[55px] font-semibold'>
                 Github <a className='p-2'><FaGithub/></a>
               </motion.button>
             </a>
@@ -98,5 +101,3 @@ const Work = () => {
 };
 
 export default Work;
-
-
