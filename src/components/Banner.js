@@ -17,6 +17,10 @@ const Banner = () => {
   function play() {
     new Audio(audio).play()
   }
+  /*new_tab*/
+  const newTab=url => {
+    window.open(url)
+  }
   return <section id='home' className='flex min-h-[85vh]'>
     <div className='container mx-auto pb-16'>
       <div className='flex flex-col lg:flex-row lg:justify-between items-center'>
@@ -31,13 +35,11 @@ const Banner = () => {
             <br/>
             <div className='p-1 flex lg:mx-0 mx-auto items-center mb-12 max-w-max '>
               { /*social media*/ }
-              <a href='https://github.com/meA-sonWat'>
-                <button className='btn btn-sm border-none rounded-lg shadow-lg shadow-cyan-500/50 flex items-center text-[18px] h-[55px]'>
-                  GitHub <a className='p-2'><FaGithub/></a>
-                </button>
-              </a>
-              <a className='p-4 cursor-pointer hover:text-blue-400' href='https://www.facebook.com/kirano.awe'><FaFacebook/></a>
-              <a className='p-4 cursor-pointer hover:text-pink-400' href='https://www.instagram.com/kirano0608/'><FaInstagram/></a>
+              <button onClick={() => newTab('https://github.com/meA-sonWat')} className='btn btn-sm border-none rounded-lg shadow-lg shadow-cyan-500/50 flex items-center text-[18px] h-[55px]'>
+                GitHub <a className='p-2'><FaGithub/></a>
+              </button>
+              <a onClick={() => newTab('https://www.facebook.com/kirano.awe')} className='p-4 cursor-pointer hover:text-blue-400'><FaFacebook/></a>
+              <a onClick={() => newTab('https://www.instagram.com/kirano0608/')} className='p-4 cursor-pointer hover:text-pink-400'><FaInstagram/></a>
             </div>
             <br/>
             <span className='text-[18px] font-semibold text-cyan-300 flex justify-center animate-bounce'>請接著往下看↓</span>

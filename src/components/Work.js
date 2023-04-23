@@ -11,7 +11,11 @@ import { motion } from 'framer-motion';
 import { fadeIn } from '../variants'
 
 const Work = () => {
-  return <div id='work' className='h-[3000px]'>
+  /*new_tab*/
+  const newTab=url => {
+      window.open(url)
+  }
+  return <div id='work' className='h-[2500px]'>
     <div className='mx-auto container relative top-[300px] '>
       { /*index_1*/ }
       <div className='relative bottom-[80px] lg:left-11 flex justify-center'>
@@ -28,11 +32,9 @@ const Work = () => {
           <span>點擊按鈕即可看見各yt頻道</span>
           <br/>
           <div className='flex justify-center'>
-            <a href='https://github.com/meA-sonWat/HOLOLIVE-PAGE'>
-              <button className='bg-gray-100 text-black hover:bg-gray-300 hover:text-gray-700 transition font-primary text-[20px] btn-sm border-none rounded-lg drop-shadow-xl flex items-center h-[55px]'>
-                 此檔案在這 <a className='p-2'><FaGithub/></a>
-              </button>
-            </a>
+            <button onClick={() => newTab('https://github.com/meA-sonWat/HOLOLIVE-PAGE')} className='bg-gray-100 text-black hover:bg-gray-300 hover:text-gray-700 transition font-primary text-[20px] btn-sm border-none rounded-lg drop-shadow-xl flex items-center h-[55px]'>
+              此檔案在這 <a className='p-2'><FaGithub/></a>
+            </button>
           </div>
         </div>
       </div>
@@ -49,16 +51,14 @@ const Work = () => {
           <div className='flex justify-center '>  
           { /*shaaaaark*/ }
             <button className='shadow-lg shadow-blue-300 bg-blue-300 text-black transition duration-200 hover:bg-blue-200 cursor-not-allowed font-primary text-[20px] btn-sm border-2 rounded-none drop-shadow-xl flex items-center h-[55px] font-semibold'>
-                <span className='p-2'>shaaaaark!</span> 
+              <span className='p-2'>shaaaaark!</span> 
             </button>
           </div>
           <br/>
           <div className='relative bottom-4 flex justify-center'>
-            <a href='https://github.com/meA-sonWat/HOLOLIVE-PAGE'>
-              <button className='bg-gray-100 text-black hover:bg-gray-300 hover:text-gray-700 transition font-primary text-[20px] btn-sm border-none rounded-lg drop-shadow-xl flex items-center h-[55px]'>
-                 此檔案在這 <a className='p-2'><FaGithub/></a>
-              </button>
-            </a>
+            <button onClick={() => newTab('https://github.com/meA-sonWat/A-webpage-vision')} className='bg-gray-100 text-black hover:bg-gray-300 hover:text-gray-700 transition font-primary text-[20px] btn-sm border-none rounded-lg drop-shadow-xl flex items-center h-[55px]'>
+              此檔案在這 <a className='p-2'><FaGithub/></a>
+            </button>
           </div>
         </div>
       </div>
@@ -75,14 +75,12 @@ const Work = () => {
         <motion.img variants={fadeIn('', 0.1)} initial='hidden' whileInView={'show'} viewport={{once: false, amount: 0.7}} className='rounded-2xl lg:w-[859px] lg:h-[400px] shadow-lg shadow-[#fa9f02]' src={project_3}/>
       </div>
       <div className='relative lg:top-[440px] top-[540px] flex justify-center'>
-        <a href='https://github.com/meA-sonWat/learning-react'>
-          <button className='bg-gray-100 text-black hover:bg-gray-300 hover:text-gray-700 transition font-primary text-[20px] btn-sm border-none rounded-lg drop-shadow-xl flex items-center h-[55px] font-semibold'>
-            此檔案在這 <a className='p-2'><FaGithub/></a>
-          </button>
-        </a>
+        <button onClick={() => newTab('https://github.com/meA-sonWat/learning-react')} className='bg-gray-100 text-black hover:bg-gray-300 hover:text-gray-700 transition font-primary text-[20px] btn-sm border-none rounded-lg drop-shadow-xl flex items-center h-[55px] font-semibold'>
+          此檔案在這 <a className='p-2'><FaGithub/></a>
+        </button>
       </div>
       { /*learn more*/ }
-      <div className='relative text-center top-[700px] lg:top-[550px] leading-[50px]'>
+      { /*<div className='relative text-center top-[700px] lg:top-[550px] leading-[50px]'>
         <span className='text-[40px] font-bold'>更多檔案在這裏!</span>
         <br/>
         <div className='flex justify-center'>
@@ -95,7 +93,7 @@ const Work = () => {
           </div>
         </div>
         <span className='relative top-[20px] text-[18px] font-semibold text-gray-200 flex justify-center animate-bounce'>點這裏點這裏↑</span>
-      </div>
+      </div>*/ }
     </div>
   </div>;
 };

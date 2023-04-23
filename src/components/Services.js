@@ -10,6 +10,10 @@ import { motion } from 'framer-motion';
 import { fadeIn } from '../variants'
 
 const Services = () => {
+  /*new_tab*/
+  const newTab=url => {
+    window.open(url)
+  }
   return <div id='services' className='section '>
     <div className='container mx-auto '>
       <div className='flex justify-center'>
@@ -36,11 +40,9 @@ const Services = () => {
           <br/>
           <span className='relative left-4 text-[20px]'>🦈-可以分享自己的成果~</span>
           <div className='flex justify-center'>
-            <a href='https://discord.gg/myit'>
-              <button className='relative top-2 btn btn-sm border-none rounded-lg shadow-lg shadow-cyan-500/50 flex items-center text-[18px] h-[55px] hover:shadow-md hover:shadow-[#474749] hover:text-[#474749]'>
-                Join us! <a className='p-1'><FaDiscord/></a>
-              </button>
-            </a>
+            <button onClick={() => newTab('https://discord.gg/myit')} className='relative top-2 btn btn-sm border-none rounded-lg shadow-lg shadow-cyan-500/50 flex items-center text-[18px] h-[55px] hover:shadow-md hover:shadow-[#474749] hover:text-[#474749]'>
+              Join us! <a className='p-1'><FaDiscord/></a>
+            </button>
           </div>
           <br/>
           <div className='flex justify-center'><span className='relative bottom-4 text-[15px] text-gray-500 font-semibold'>截至目前已來到了3k+</span></div>
@@ -63,11 +65,9 @@ const Services = () => {
           <br/>
           <span className='relative left-4 text-[20px]'>🦈-戰 艦 收 藏</span>
           <div className='flex justify-center'>
-            <a href='https://discord.gg/zeitfrei'>
-              <button className='relative top-2 btn btn-sm border-none rounded-lg shadow-lg shadow-cyan-500/50 flex items-center text-[18px] h-[55px] hover:shadow-md hover:shadow-[#474749] hover:text-[#474749]'>
-                Join us! <a className='p-1 '><FaDiscord/></a>
-              </button>
-            </a>
+            <button onClick={() => newTab('https://discord.gg/zeitfrei')} className='relative top-2 btn btn-sm border-none rounded-lg shadow-lg shadow-cyan-500/50 flex items-center text-[18px] h-[55px] hover:shadow-md hover:shadow-[#474749] hover:text-[#474749]'>
+              Join us! <a className='p-1 '><FaDiscord/></a>
+            </button>
           </div>
           <br/>
           <div className='flex justify-center'><span className='relative bottom-4 text-[15px] text-gray-500 font-semibold'>截至目前已來到了16k+</span></div>
