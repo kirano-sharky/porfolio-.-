@@ -15,7 +15,7 @@ const Work = () => {
   const newTab=url => {
       window.open(url)
   }
-  return <div id='work' className='h-[2500px]'>
+  return <div id='work' className='h-[1950px]'>
     <div className='mx-auto container relative top-[300px] '>
       { /*index_1*/ }
       <div className='relative bottom-[80px] lg:left-11 flex justify-center'>
@@ -79,21 +79,6 @@ const Work = () => {
           此檔案在這 <a className='p-2'><FaGithub/></a>
         </button>
       </div>
-      { /*learn more*/ }
-      { /*<div className='relative text-center top-[700px] lg:top-[550px] leading-[50px]'>
-        <span className='text-[40px] font-bold'>更多檔案在這裏!</span>
-        <br/>
-        <div className='flex justify-center'>
-          <div className='relative before:text-[20px] before:z-10 before:absolute before:left-1/2 before:-bottom-3 before:w-max before:max-w-xs before:-translate-x-1/2 before:translate-y-full before:rounded-lg before:bg-gray-700 before:px-2 before:py-1.5 before:text-white before:invisible before:content-[attr(data-tip)] after:z-10 after:absolute after:left-1/2 after:-bottom-3 after:h-0 after:w-0 after:-translate-x-1/2 after:border-8 after:border-b-gray-700 after:border-l-transparent after:border-t-transparent after:border-r-transparent after:invisible hover:before:visible hover:after:visible' data-tip="網站代碼的秘密~">
-            <a href='https://github.com/meA-sonWat/'>
-              <motion.button variants={fadeIn('', 0.1)} initial='hidden' whileInView={'show'} viewport={{once: false, amount: 0.7}} className='bg-gray-100 text-black hover:bg-gray-300 hover:text-gray-700 transition font-primary text-[20px] btn-sm border-none rounded-tl-lg rounded-br-lg shadow-lg shadow-accent flex items-center h-[55px] font-semibold'>
-                Github <a className='p-2'><FaGithub/></a>
-              </motion.button>
-            </a>
-          </div>
-        </div>
-        <span className='relative top-[20px] text-[18px] font-semibold text-gray-200 flex justify-center animate-bounce'>點這裏點這裏↑</span>
-      </div>*/ }
     </div>
   </div>;
 };
