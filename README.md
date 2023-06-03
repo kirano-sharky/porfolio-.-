@@ -9,7 +9,7 @@
 
 ### `npm test`
 
-Launches the test runner in the interactive watch mode.\
+以交互式观察模式启动测试运行器\
 See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
 ### `npm run build`
