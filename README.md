@@ -10,7 +10,7 @@
 ### `npm test`
 
 以交互式观察模式启动测试运行器\
-請查詢 [運行測試部分](https://facebook.github.io/create-react-app/docs/running-tests) 以獲取更多訊息.
+請點擊 [運行測試部分](https://facebook.github.io/create-react-app/docs/running-tests) 以獲取更多訊息.
 
 ### `npm run build`
 
@@ -20,6 +20,6 @@
 縮小構建.\
 就可以部署你的網站了！
 
-查詢 [部署](https://facebook.github.io/create-react-app/docs/deployment) 以獲取更多訊息.
+點擊 [部署](https://facebook.github.io/create-react-app/docs/deployment) 以獲取更多訊息.
 
 祝你使用愉快？
